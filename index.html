@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="dragula.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section id="contenedor">
+        <div>
+            <h1>Pendientes</h1>
+            <ul id="to-do">
+                <li>Llamar a mamá</li> 
+                <li>Comprar leche</li>
+                <li>Enviar un correo electrónico</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h1>En progreso</h1>
+            <ul id="wip">
+                <li>Hacer ejercicio</li>
+                <li>Leer un libro</li>
+                <li>Preparar la cena</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h1>End</h1>
+            <ul id="end">
+                <li>Tomar una siesta</li>
+                <li>Hacer una llamada de Zoom</li>
+            </ul>
+        </div>
+    </section>
+    
+
+   <script src="\dragula.js"></script>
+   <script>
+    dragula([
+      document.querySelector('#to-do'), 
+      document.querySelector('#wip'),
+      document.querySelector('#end')
+    ]);
+   </script>
+</body>
+</html>
